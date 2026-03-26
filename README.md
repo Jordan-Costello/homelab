@@ -1,6 +1,6 @@
 # homelab
 Documenting my learning progress from Raspberry Pi to full system.
-Built as a practical learning environment along side my IT degree. 
+Built as a practical learning environment along side my IT degre, started in 2nd year. 
 
 The following are the goals I have set out for myself at the beginning of this process. 
 
@@ -20,3 +20,4 @@ The following are the goals I have set out for myself at the beginning of this p
 - [ ] 14 - Linux VM
 - [ ] 15 - Windows Server
 - [ ] 16 - Active Directory
+- [ ] 17 - CTF / Red Team Practice & learning.
