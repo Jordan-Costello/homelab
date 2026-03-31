@@ -32,11 +32,10 @@
 
 
 //Mistakes//
-I flashed pi os desktop version not the lite version. I reflashed with lite. 
-When trying to ssh to my homelab I received an error. 
-When I reflashed Pi had a new host key but my laptop stored the older one in memory. 
-
-To fix this i ran the following command: 
+- I flashed pi os desktop version not the lite version. I reflashed with lite. 
+- When trying to ssh to my homelab I received an error. 
+- When I reflashed Pi had a new host key but my laptop stored the older one in memory. 
+- To fix this i ran the following command: 
 
 ```ssh-keygen -R My Hostname```.
 
