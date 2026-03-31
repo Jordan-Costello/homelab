@@ -1,0 +1,36 @@
+01 - Pi-hole
+
+// What is Pi-hole//
+- Pi-hole is a locally hosted, network-level DNS sinkhole. 
+- It blocks ads and trackers at the DNS level and replaces your ISP's recursive DNS resolver. 
+- It keeps DNS queries within your own network. 
+
+//How DNS Works//
+- When a user sends a web request i.e "www.google.com". It is DNS' job to resolve the address, and return the correct IP Address. 
+- The ISP's recursive DNS servers receives the request, if the domain is not stored in cache the request is forwarded up stream to the root server. 
+- Root stores the Name and IP Address of all TLD Servers. Root refers the recursive server to the .com TLD server, in this scenario.
+- .com TLD refers the recursive server to the Authoritative Server. 
+- The Authoritative Server tells the recursive server google.com is located at x IP address. 
+- The recursive server send the IP back to the user and the website loads.
+
+//How Pi-hole Works//
+- Pi-hole acts as the recursive DNS server, removing the need for us to send queries to the ISP's recursive server. 
+- Pi-hole sits between all devices and the router, this allows Pi-hole to run ad and tracker blocking across the entire network. This avoids having to manually config all devices. 
+- Pi-hole maintains a database of domain names that are blocked, it is updated and maintained regularly. 
+- Blocklists are community maintained lists downloaded from the internet, stored locally, manually updated or scheduled.
+
+Data flow when domain name not blocked:
+- Browser -> Pi-hole -> Router -> Upstream DNS -> Root/TLD/Auth -> IP -> Router -> Pi-hole -> Browser. 
+
+Data flow when domain name blocked: 
+- Browser -> Pi-hole -> 0.0.0.0 -> browser. 
+
+
+//Privacy Model//
+-
+
+//Install Notes//
+-
+
+//Mistakes//
+-
