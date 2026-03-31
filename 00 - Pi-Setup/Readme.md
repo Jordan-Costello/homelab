@@ -18,10 +18,10 @@
 ```ssh username@hostname```.
 
 //First commands//
-Upgrading all packages on the base OS:
+- Upgrading all packages on the base OS:
 ```sudo apt update && sudo apt upgrade -y```.
 
-Check disk space:
+- Check disk space:
 ```df -h```.
  
 //Network//
