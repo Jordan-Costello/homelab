@@ -35,11 +35,10 @@
 - I flashed pi os desktop version not the lite version. I reflashed with lite. 
 - When trying to ssh to my homelab I received an error. 
 - When I reflashed Pi had a new host key but my laptop stored the older one in memory. 
-- To fix this i ran the following command: 
 
+- To remove the old host key from known hosts: 
 ```ssh-keygen -R My Hostname```.
 
-This command removes the old host key from known hosts. 
 
 //Total time on setup//
-~4/5 Hours including OS reflash and troubleshooting. 
+- ~4/5 Hours including OS reflash and troubleshooting. 
